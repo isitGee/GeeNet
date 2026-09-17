@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GeeNet - Windows network troubleshooting that explains itself</title>
+<meta name="description" content="GeeNet is a free Windows network troubleshooting toolkit with a guided mode that explains every result in plain words, and professional tools for technicians. No install, works offline.">
+<meta name="author" content="George Mwanga">
+<meta name="theme-color" content="#0b0f14">
+<link rel="canonical" href="https://isitgee.github.io/GeeNet/">
+
+<!-- social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="GeeNet - Windows network troubleshooting that explains itself">
+<meta property="og:description" content="Guided mode for everyone, professional tools for technicians. Free, offline, nothing to install.">
+<meta property="og:url" content="https://isitgee.github.io/GeeNet/">
+<meta property="og:image" content="https://isitgee.github.io/GeeNet/screenshots/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GeeNet - Windows network troubleshooting that explains itself">
+<meta name="twitter:description" content="Guided mode for everyone, professional tools for technicians. Free, offline, nothing to install.">
+<meta name="twitter:image" content="https://isitgee.github.io/GeeNet/screenshots/og-image.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "GeeNet",
+  "alternateName": "GeeNet Windows Network Toolkit",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "softwareVersion": "2.0",
+  "author": { "@type": "Person", "name": "George Mwanga", "url": "https://github.com/isitgee" },
+  "codeRepository": "https://github.com/isitgee/GeeNet",
+  "url": "https://isitgee.github.io/GeeNet/",
+  "downloadUrl": "https://isitgee.github.io/GeeNet/GeeNet.zip",
+  "description": "Free network troubleshooting toolkit for Windows with a guided mode that asks plain questions, tests the network in order and explains what each result means, plus professional tools for technicians.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "featureList": [
+    "Guided troubleshooting with 15 problem categories and 160 symptoms",
+    "Sequential diagnosis: link, adapter, IP, router, internet, DNS, web",
+    "Risk-tiered repairs that are explained first, then re-tested",
+    "Plain-text network and session reports",
+    "Professional tools: ping, traceroute, DNS, ARP, routes, packet loss, MTU",
+    "No installation, no accounts, no internet needed to run"
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top">
+      <span class="mark" aria-hidden="true">&gt;_</span>
+      <span class="brandtext">
+        <strong>GeeNet</strong>
+        <small>Windows Network Toolkit</small>
+      </span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#problem">The problem</a>
+      <a href="#how">How it works</a>
+      <a href="#screens">Screenshots</a>
+      <a href="#faq">FAQ</a>
+      <a href="#creator">Creator</a>
+      <a class="cta" href="https://github.com/isitgee/GeeNet">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ---------------------------------------------------------------- hero -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Free &middot; open on GitHub &middot; Windows 10 &amp; 11</p>
+      <h1>Network troubleshooting that explains itself.</h1>
+      <p class="lede">
+        GeeNet is a free Windows toolkit with two doors. <strong>Guided mode</strong> asks you two or
+        three plain questions, then finds the fault itself &mdash; and says what every result means,
+        what probably caused it, and what to do next. <strong>Professional mode</strong> keeps every
+        classic tool within one keypress: ping, traceroute, DNS, ARP, routes, packet loss, MTU,
+        Winsock and TCP/IP resets.
+      </p>
+      <p class="lede small">
+        No installation. No account. No internet needed to run. Nothing is sent anywhere.
+      </p>
+      <p class="buttons">
+        <a class="btn primary" href="GeeNet.zip" download>Download for Windows</a>
+        <a class="btn ghost" href="https://github.com/isitgee/GeeNet">View on GitHub</a>
+      </p>
+      <p class="fineprint">
+        The download is two files and nothing else: <code>GeeNet.bat</code> and
+        <code>GeeNet.ps1</code>. Windows may warn about a script that came from the internet
+        &mdash; that is explained in the FAQ below. Prefer to read the code first? Both files are
+        in the <a href="https://github.com/isitgee/GeeNet">repository</a>. Prefer to run it
+        directly? <code>powershell -ExecutionPolicy Bypass -File GeeNet.ps1</code>
+      </p>
+    </div>
+    <div class="hero-shot">
+      <a class="zoom" href="screenshots/main-menu.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/main-menu.svg" width="676" height="842" alt="The GeeNet main menu inside a Windows console window, showing Beginner, Professional, Network Information, Report, About and Exit options."></a>
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------------- problem -->
+<section id="problem" class="band">
+  <div class="wrap">
+    <h2>The problem GeeNet is trying to solve</h2>
+    <p class="section-lede">
+      When the internet breaks, the person in front of the computer is usually left alone with two
+      bad options: guess, or call somebody. Windows itself is not much help either.
+    </p>
+
+    <div class="cards two">
+      <article class="card problem">
+        <h3>What goes wrong today</h3>
+        <ul class="ticks no">
+          <li><strong>&ldquo;No internet access&rdquo;</strong> &mdash; and nothing else. Windows knows far more than that, but it does not say it.</li>
+          <li><strong>The same advice every time:</strong> restart the router, restart the computer, re-enter the Wi-Fi password. It sometimes works, which is why people keep doing it, but it teaches nothing.</li>
+          <li><strong>Command-line answers.</strong> Help forums reply with <code>ipconfig /all</code>, <code>netsh winsock reset</code> or <code>route print</code>, and assume you know what to do with the output.</li>
+          <li><strong>Guesswork repairs.</strong> People run a "network reset" as a first step instead of a last one, lose their saved Wi-Fi profiles and settings, and still do not know whether the problem was fixed or just hidden.</li>
+          <li><strong>Technicians start from zero</strong> on every call, asking the same questions the computer could have answered.</li>
+        </ul>
+      </article>
+
+      <article class="card solution">
+        <h3>What GeeNet does instead</h3>
+        <ul class="ticks yes">
+          <li><strong>Tests in the order a technician would:</strong> physical link &rarr; adapter &rarr; IP address &rarr; router &rarr; internet by IP &rarr; names &rarr; web. The first real failure is the answer.</li>
+          <li><strong>Stops early.</strong> If the Wi-Fi adapter is off, testing DNS is pointless &mdash; GeeNet skips it and says why.</li>
+          <li><strong>Explains every result</strong> in plain words: what was tested, why, what the result means, the likely causes, and what to do.</li>
+          <li><strong>Repairs by risk tier.</strong> Safe things first (clear the DNS cache, renew the address, reconnect Wi-Fi). Disruptive things only as a clearly labelled last resort, and never without asking.</li>
+          <li><strong>Checks its own work.</strong> After a repair it re-tests the affected checks, and says plainly when a repair did not help.</li>
+          <li><strong>Writes it down.</strong> A plain-text report with the problem, the findings, the likely cause, what was tried, the current status and the next step.</li>
+        </ul>
+      </article>
+    </div>
+
+    <p class="note">
+      GeeNet is honest about its limits too. It diagnoses the computer side and says so when the
+      fault is almost certainly the router, the line or the ISP &mdash; no program on a PC can repair
+      those, and pretending otherwise wastes people's time.
+    </p>
+  </div>
+</section>
+
+<!-- ----------------------------------------------------------------- how -->
+<section id="how" class="band alt">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="section-lede">
+      One idea runs through the whole tool: a diagnostic finding is only useful if it comes with
+      meaning and a next step.
+    </p>
+
+    <div class="cards four">
+      <article class="card">
+        <span class="step">1</span>
+        <h3>You describe the problem</h3>
+        <p>15 categories, 160 real symptoms &mdash; from "the internet stopped working" to "only one app
+        cannot connect". Nothing technical is asked of you.</p>
+      </article>
+      <article class="card">
+        <span class="step">2</span>
+        <h3>GeeNet finds the numbers</h3>
+        <p>It reads the addresses, gateway and DNS servers from Windows itself, so you never have to
+        look them up or understand them.</p>
+      </article>
+      <article class="card">
+        <span class="step">3</span>
+        <h3>Tests in order, then stops</h3>
+        <p>Link, adapter, IP, DHCP, router, internet, names, web. The first layer that fails is the
+        answer; everything after it is skipped and explained.</p>
+      </article>
+      <article class="card">
+        <span class="step">4</span>
+        <h3>Repair, re-test, report</h3>
+        <p>Every repair is explained before it runs, confirmed, executed, checked for its real
+        result, and then the diagnosis is re-run.</p>
+      </article>
+    </div>
+
+    <h3 class="sub">The layers it walks through</h3>
+    <ol class="layers">
+      <li><span>Physical link</span> &mdash; is the cable in, is Wi-Fi connected, is the adapter switched on?</li>
+      <li><span>Adapter and driver</span> &mdash; does Windows see a healthy network device?</li>
+      <li><span>IP address and DHCP</span> &mdash; does this computer have a usable address, or a 169.254 self-assigned one?</li>
+      <li><span>Default gateway</span> &mdash; is there a router address, and does the router answer?</li>
+      <li><span>Internet by address</span> &mdash; does anything outside answer, with names not involved yet?</li>
+      <li><span>Name resolution</span> &mdash; can names be turned into addresses, and does a public resolver agree?</li>
+      <li><span>Web and applications</span> &mdash; does real HTTPS traffic work, and is one specific service being blocked?</li>
+    </ol>
+
+    <h3 class="sub">What every result carries</h3>
+    <div class="grid-two">
+      <ul class="ticks yes">
+        <li>What was tested, and why it matters</li>
+        <li>What the result means in plain words</li>
+        <li>The likely causes, in order of probability</li>
+      </ul>
+      <ul class="ticks yes">
+        <li>What you should do next</li>
+        <li>Whether GeeNet can fix it itself, or only an administrator, you, or the ISP can</li>
+        <li>Whether a restart is needed &mdash; and GeeNet never restarts anything for you</li>
+      </ul>
+    </div>
+    <p class="note small">
+      Press <kbd>T</kbd> anywhere GeeNet reports a diagnosis to see the raw values behind it if you
+      or a technician want them.
+    </p>
+  </div>
+</section>
+
+<!-- ----------------------------------------------------------- screenshots -->
+<section id="screens" class="band">
+  <div class="wrap">
+    <h2>Screenshots</h2>
+    <p class="section-lede">
+      Every picture below is a real capture of GeeNet's own output, drawn from the tool itself when
+      the site is built &mdash; not a mock-up. Click any window to open it full size; the pictures
+      are vector files, so they stay sharp at any zoom.
+    </p>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/main-menu.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/main-menu.svg" alt="GeeNet main menu with options for Beginner, Professional, Network Information, Report, About and Exit."></a>
+      <figcaption><strong>The front door.</strong> Two ways in: guided troubleshooting for anyone, or the
+      professional tools. The banner also shows whether GeeNet is running with administrator rights.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/guided-categories.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/guided-categories.svg" alt="Guided mode listing 15 problem categories such as internet connection, Wi-Fi, Ethernet, IP address, DNS and router symptoms."></a>
+      <figcaption><strong>Start from your own words.</strong> 15 categories of real-world symptoms.
+      There is also an "I am not sure" path that runs a general diagnosis and asks only whether you
+      are on Wi-Fi or a cable.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/guided-question.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/guided-question.svg" alt="A single question in guided mode asking which application is having trouble, with a numbered list of popular applications."></a>
+      <figcaption><strong>Only the questions that change the diagnosis.</strong> Usually one or two,
+      never technical. The numbers GeeNet needs &mdash; addresses, gateway, DNS &mdash; it reads from
+      Windows itself.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/check-explained.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/check-explained.svg" alt="A failing DNS check in GeeNet showing the result, what was tested, why, what it means and the likely cause."></a>
+      <figcaption><strong>No bare "FAILED".</strong> Even a failure is written as an explanation: what
+      was checked, why that check matters, what the result means, and the technical detail if you
+      want it.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/sequential-stop.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/sequential-stop.svg" alt="GeeNet explaining that it stopped the remaining tests because an earlier failure already proves the likely cause."></a>
+      <figcaption><strong>It stops when continuing would be pointless.</strong> A failure at an earlier
+      layer is reported as the answer, and the tests behind it are skipped with a reason instead of
+      producing noise.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/repair-verified.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/repair-verified.svg" alt="A repair preview showing what will be done, why it can help, the risk level and how to undo it, before it runs."></a>
+      <figcaption><strong>Every repair is explained first.</strong> What it does, why it may help, what
+      you will notice, how to undo it, and its risk level &mdash; then it waits for your answer.
+      Disruptive repairs are clearly marked, and the last-resort ones ask twice.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/retest-honest.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/retest-honest.svg" alt="Re-test results after a repair showing that the check did not improve, and GeeNet saying it will not claim the repair fixed anything."></a>
+      <figcaption><strong>It checks whether the repair actually worked.</strong> If the re-test does not
+      improve, GeeNet says so and points at the next possibility &mdash; it never claims a fix it
+      cannot see.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/session-result.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/session-result.svg" alt="End-of-session summary listing the problem, findings, likely cause and what GeeNet tried."></a>
+      <figcaption><strong>The result you take away.</strong> Problem, findings, likely cause, what GeeNet
+      tried, the current status and the next step &mdash; and the same content is saved as a plain
+      text file.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/network-report.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/network-report.svg" alt="A plain text GeeNet network report in Notepad showing the system, adapters, IP configuration, DNS and DHCP details."></a>
+      <figcaption><strong>The report.</strong> A plain-text file in the <code>reports</code> folder with
+      the configuration, the tests, the diagnosis and the repairs attempted &mdash; readable in
+      Notepad, and safe to send to support.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/professional-menu.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/professional-menu.svg" alt="The professional tools menu listing connectivity, DNS, IP addressing, adapter and repair tools."></a>
+      <figcaption><strong>Professional mode, unchanged in spirit.</strong> 34 direct tools with no wizard
+      in the way: ping, latency and packet loss, stability monitoring, traceroute, DNS, release and
+      renew, ARP, routing, sockets, MTU and the reset tools.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/full-diagnostics.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/full-diagnostics.svg" alt="Full diagnostics running numbered staged checks such as adapter, IP configuration, DHCP, gateway and internet reachability."></a>
+      <figcaption><strong>Full diagnostics is an investigation, not a checklist.</strong> Numbered
+      stages as they run&hellip;</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/full-diagnostics-diagnosis.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/full-diagnostics-diagnosis.svg" alt="The interpretation section of full diagnostics showing the likely failure layer and the recommended next steps."></a>
+      <figcaption>&hellip; and then a single interpretation of the <em>combination</em> of results: which
+      layer is most likely at fault, why, and what to do about it.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/technical-details.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/technical-details.svg" alt="Optional technical details showing the raw values behind each check, the check identifiers and how long each took."></a>
+      <figcaption><strong>The optional deep layer.</strong> Press <kbd>T</kbd> for the values GeeNet
+      actually read, the check identifiers and timings &mdash; there when you want them, out of the
+      way when you do not.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <a class="zoom" href="screenshots/self-test.svg" target="_blank" rel="noopener" title="Open the full-size image">
+        <img src="screenshots/self-test.svg" alt="GeeNet's self test simulating network situations and verifying what the tool concludes in each case."></a>
+      <figcaption><strong>It tests itself.</strong> <code>-SelfTest</code> runs 225 checks against
+      simulated computers, including 21 situations from a healthy connection to a stopped DNS
+      service, and writes a report either way.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------------ who its for -->
+<section id="who" class="band alt">
+  <div class="wrap">
+    <h2>Who it is for</h2>
+    <div class="cards three">
+      <article class="card">
+        <h3>The person whose internet stopped</h3>
+        <p>You will be asked what the problem feels like, not what a subnet mask is. At the end you
+        get a diagnosis in sentences and, usually, one safe thing to try.</p>
+      </article>
+      <article class="card">
+        <h3>The technician on a support call</h3>
+        <p>Run guided mode for the reasoning, professional mode for the raw tools, and hand over a
+        report that already contains the configuration, the tests and what was tried.</p>
+      </article>
+      <article class="card">
+        <h3>The person who wants to understand</h3>
+        <p>Every check says why it exists. GeeNet is written to teach the shape of a network while
+        it fixes it &mdash; layers, addresses, gateways, resolvers, and what each one failing means.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------------------ faq -->
+<section id="faq" class="band">
+  <div class="wrap">
+    <h2>Questions people ask</h2>
+    <p class="section-lede">Anything else, ask in the <a href="https://github.com/isitgee/GeeNet/issues">GitHub issues</a>.</p>
+
+    <details>
+      <summary>What exactly do I need to run it?</summary>
+      <p>Windows 10 or Windows 11, and PowerShell &mdash; version 5.1 (built into Windows) or 7 and
+      newer. Nothing else: no Python, no Node.js, no modules to install, no account to create.</p>
+    </details>
+
+    <details>
+      <summary>Is it really free?</summary>
+      <p>Yes. It is free and the source is on GitHub, so you can read every line before you run it.
+      There is no paid tier, no online service, and no data collection of any kind.</p>
+    </details>
+
+    <details>
+      <summary>Windows says "running scripts is disabled on this system". What now?</summary>
+      <p>That is a Windows safety setting for scripts in general, not a problem with GeeNet. Double-click
+      <code>GeeNet.bat</code> &mdash; it starts PowerShell with the right option only for this run
+      &mdash; or use:
+      <br><code>powershell -NoProfile -ExecutionPolicy Bypass -File GeeNet.ps1</code></p>
+    </details>
+
+    <details>
+      <summary>Windows showed a warning, or my browser did. Should I worry?</summary>
+      <p>Files downloaded from the internet carry a marker that Windows and browsers show for
+      <em>every</em> script. If you prefer, read the source on GitHub, then use the file. You can also
+      clear the marker: right-click the file &rarr; Properties &rarr; tick <em>Unblock</em> &rarr; OK.</p>
+    </details>
+
+    <details>
+      <summary>Does it need administrator rights?</summary>
+      <p>No, not for diagnostics. Every check works as a standard user. A few repairs change system
+      settings (a Winsock reset, a TCP/IP reset, disabling an adapter), and those will tell you they
+      need Administrator rights before they run. You can also start GeeNet with
+      <code>GeeNet.bat -Admin</code> or from menu option [6].</p>
+    </details>
+
+    <details>
+      <summary>Will it change my computer without asking?</summary>
+      <p>No. Diagnostics only read. Every repair is explained, then confirmed by you, then run &mdash;
+      one at a time &mdash; and afterwards GeeNet re-tests and reports the real result. High-impact
+      repairs such as a full network reset ask an extra time and warn you what you will lose.</p>
+    </details>
+
+    <details>
+      <summary>Will it restart my computer?</summary>
+      <p>Never. Some repairs (TCP/IP reset, network reset) only take full effect after a restart, and
+      GeeNet will tell you that clearly &mdash; but it will not restart anything. That decision stays
+      with you.</p>
+    </details>
+
+    <details>
+      <summary>Does it send my information anywhere?</summary>
+      <p>No. GeeNet runs entirely on your computer and needs no internet connection to start. Nothing
+      is uploaded, and there is no telemetry and no analytics.</p>
+    </details>
+
+    <details>
+      <summary>What does it put on my disk?</summary>
+      <p>Reports and a session log, as plain text files, in the <code>reports</code> folder next to
+      the script and in your temporary folder. GeeNet prints the paths on screen. Delete them
+      whenever you like &mdash; nothing else is left behind, and no registry keys are added.</p>
+    </details>
+
+    <details>
+      <summary>What is in the reports? Could they leak something private?</summary>
+      <p>Network configuration and test results: computer name, Windows version, adapters, addresses,
+      gateway, DNS servers, DHCP state, Wi-Fi details, routes and the tests. No passwords, no browsing
+      history, no personal files, no Wi-Fi passwords. They are text files &mdash; open them in Notepad
+      and read them before sending them to anybody.</p>
+    </details>
+
+    <details>
+      <summary>How do I know the tool itself is working correctly?</summary>
+      <p>Run <code>GeeNet.bat -SelfTest</code>. GeeNet simulates 21 different computers &mdash; healthy,
+      cable unplugged, self-assigned 169.254 address, router dead, DNS broken, HTTPS blocked, single
+      application failing, VPN tunnel stuck and more &mdash; and checks that it reaches the right
+      conclusion for each one. 225 checks, about 14 seconds, and a report is written either way.</p>
+    </details>
+
+    <details>
+      <summary>My problem is my router or my ISP. Will this help?</summary>
+      <p>It will tell you that. GeeNet can prove the computer side is fine and point at the router,
+      the line or the ISP with evidence &mdash; for example, the router answers but nothing beyond it
+      does, or other devices on the network fail too. It will not pretend it can reboot your router
+      or repair a line, because no program on a PC can.</p>
+    </details>
+
+    <details>
+      <summary>Can I use it at work, or on a customer's machine?</summary>
+      <p>Yes, though check your own policy first, as with any tool. GeeNet only reads configuration
+      and runs the repairs a person chooses. It leaves no services, no startup entries and no
+      registry settings behind.</p>
+    </details>
+
+    <details>
+      <summary>Something is broken, or I have an idea. How do I report it?</summary>
+      <p>Open an <a href="https://github.com/isitgee/GeeNet/issues">issue on GitHub</a>. The most
+      useful thing to attach is the self-test report and the session report from the
+      <code>reports</code> folder &mdash; they contain what GeeNet saw and concluded.</p>
+    </details>
+  </div>
+</section>
+
+<!-- -------------------------------------------------------------- creator -->
+<section id="creator" class="band alt">
+  <div class="wrap creator">
+    <div class="creator-text">
+      <h2>Who made this</h2>
+      <p>
+        <strong>GeeNet is made by George Mwanga.</strong> It exists because of a very ordinary
+        situation: a connection stops working, Windows says "no internet access", and the person
+        sitting there is handed a wall of commands and left to guess. The tools were never the
+        problem &mdash; the missing part was explaining.
+      </p>
+      <p>
+        So GeeNet does the part a good technician does on a support call: ask what is wrong in plain
+        language, test the layers in a sensible order, stop when continuing makes no sense, say what
+        the result means, fix only what can safely be fixed, and check afterwards whether it actually
+        helped.
+      </p>
+      <p>
+        It is built to be usable in the places where tools usually are not: on an old laptop, on a
+        slow connection, offline, without installing anything, and without asking the person to
+        learn a single command.
+      </p>
+      <ul class="contact">
+        <li><span>GitHub</span> <a href="https://github.com/isitgee">github.com/isitgee</a></li>
+        <li><span>Phone</span> <a href="tel:+255762358050">+255 762 358 050</a></li>
+        <li><span>Project</span> <a href="https://github.com/isitgee/GeeNet">github.com/isitgee/GeeNet</a></li>
+      </ul>
+      <p class="fineprint">
+        GeeNet is not a product with a support desk behind it &mdash; it is one person's tool, shared
+        because it is useful. Feedback and reports are genuinely welcome.
+      </p>
+    </div>
+    <aside class="creator-card">
+      <div class="avatar" aria-hidden="true">GM</div>
+      <p class="name">George Mwanga</p>
+      <p class="role">Maker of GeeNet</p>
+      <p class="quote">&ldquo;A diagnostic result is only useful when it comes with a reason and a
+      next step.&rdquo;</p>
+      <p class="meta">Dar es Salaam, Tanzania</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------------ start now -->
+<section class="band cta-band">
+  <div class="wrap cta-inner">
+    <div>
+      <h2>Try it on the machine in front of you</h2>
+      <p>Download the two files, double-click <code>GeeNet.bat</code>, and pick [1]. If you want to be
+      sure the copy is intact first, run <code>GeeNet.bat -SelfTest</code>.</p>
+    </div>
+    <p class="buttons">
+      <a class="btn primary" href="GeeNet.zip" download>Download</a>
+      <a class="btn ghost" href="https://github.com/isitgee/GeeNet">Source on GitHub</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <p class="brandline"><strong>GeeNet</strong> &mdash; Windows Network Toolkit &middot; Diagnose | Troubleshoot | Repair</p>
+      <p class="muted">Made by George Mwanga &middot; +255762358050 &middot; <a href="https://github.com/isitgee">github.com/isitgee</a></p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#problem">The problem</a>
+      <a href="#how">How it works</a>
+      <a href="#screens">Screenshots</a>
+      <a href="#faq">FAQ</a>
+      <a href="#creator">Creator</a>
+      <a href="https://github.com/isitgee/GeeNet/issues">Report an issue</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="684" height="902" viewBox="0 0 684 902" role="img" aria-label="GeeNet - Guided Troubleshooting">
+<title>GeeNet - Guided Troubleshooting</title>
+<rect x="0.5" y="0.5" width="683" height="901" rx="9" fill="#0C0C0C" stroke="#3A3A3A"/>
+<path d="M0.5 9.5 A9 9 0 0 1 9.5 0.5 H674.5 A9 9 0 0 1 683.5 9.5 V34.0 H0.5 Z" fill="#1F1F1F"/>
+<text x="638" y="22" font-family="Segoe UI, sans-serif" font-size="12" fill="#BFBFBF" text-anchor="middle">&#x2212;</text>
+<text x="654" y="22" font-family="Segoe UI, sans-serif" font-size="12" fill="#BFBFBF" text-anchor="middle">&#x25A1;</text>
+<text x="670" y="22" font-family="Segoe UI, sans-serif" font-size="12" fill="#BFBFBF" text-anchor="middle">&#x2715;</text>
+<rect x="14" y="11" width="12" height="12" rx="2.5" fill="#2D2D2D" stroke="#4A4A4A"/>
+<text x="20" y="21" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="9" fill="#8CD98C" text-anchor="middle">&gt;_</text>
+<text x="34" y="22" font-family="Segoe UI, sans-serif" font-size="12.5" fill="#BFBFBF">GeeNet - Guided Troubleshooting</text>
+<text x="18" y="60" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#3A96DD" xml:space="preserve">  ==========================================================================</text>
+<text x="18" y="80" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#61D6D6" xml:space="preserve">  TECHNICAL DETAILS</text>
+<text x="18" y="100" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#3A96DD" xml:space="preserve">  --------------------------------------------------------------------------</text>
+<text x="18" y="120" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">    These are the values GeeNet actually read from Windows and measured. You</text>
+<text x="18" y="140" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">    do not need them to follow the advice - they are here so nothing is</text>
+<text x="18" y="160" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">    hidden and so a technician can see the raw evidence.</text>
+<text x="18" y="200" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#F2F2F2" xml:space="preserve">  ✓ Network adapter check   [Pass]</text>
+<text x="18" y="220" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#CCCCCC" xml:space="preserve">      Up adapters: Ethernet. Status: Ethernet=Up, 1 Gbps</text>
+<text x="18" y="240" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">      check id AdapterState   -   layer Link   -   took 2 ms</text>
+<text x="18" y="280" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#F2F2F2" xml:space="preserve">  ✓ Ethernet (cable) check   [Pass]</text>
+<text x="18" y="300" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#CCCCCC" xml:space="preserve">      Adapter errors: rx=0 tx=0 discards=0</text>
+<text x="18" y="320" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">      check id Ethernet   -   layer Link   -   took 3 ms</text>
+<text x="18" y="360" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#F2F2F2" xml:space="preserve">  ✓ IP address check   [Pass]</text>
+<text x="18" y="380" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#CCCCCC" xml:space="preserve">      Ethernet: IPv4 192.168.1.50/24 (mask 255.255.255.0), gateway</text>
+<text x="18" y="400" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#CCCCCC" xml:space="preserve">      &apos;192.168.1.1&apos;, DNS 192.168.1.1. DHCP: Enabled. Network profile:</text>
+<text x="18" y="420" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#CCCCCC" xml:space="preserve">      HomeNetwork [Private]. MTU: 1500.</text>
+<text x="18" y="440" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">      check id IPConfig   -   layer IP   -   took 4 ms</text>
+<text x="18" y="480" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#F2F2F2" xml:space="preserve">  ✓ Router reachability check   [Pass]</text>
+<text x="18" y="500" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#CCCCCC" xml:space="preserve">      ping 192.168.1.1 -&gt; 2/2 replies, avg 14 ms, loss 0%.</text>
+<text x="18" y="520" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">      check id GatewayReach   -   layer Local   -   took 25 ms</text>
+<text x="18" y="560" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#F2F2F2" xml:space="preserve">  ✓ Internet reachability check (by IP address)   [Pass]</text>
+<text x="18" y="580" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#CCCCCC" xml:space="preserve">      1.1.1.1: 2/2 replies, statuses Success | 8.8.8.8: 2/2 replies,</text>
+<text x="18" y="600" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#CCCCCC" xml:space="preserve">      statuses Success</text>
+<text x="18" y="620" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">      check id InternetIP   -   layer Transport   -   took 1 ms</text>
+<text x="18" y="660" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#F2F2F2" xml:space="preserve">  ✗ DNS name resolution check   [Fail]</text>
+<text x="18" y="680" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#CCCCCC" xml:space="preserve">      Configured resolvers: 192.168.1.1. Failed: www.google.com(No such host</text>
+<text x="18" y="700" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#CCCCCC" xml:space="preserve">      is known); www.microsoft.com(No such host is known). Public resolver</text>
+<text x="18" y="720" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#CCCCCC" xml:space="preserve">      1.1.1.1 succeeded with 142.250.185.78.</text>
+<text x="18" y="740" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">      check id DNS   -   layer App   -   took 5 ms   -   fix class NeedsAdmin</text>
+<text x="18" y="780" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#F2F2F2" xml:space="preserve">  - Web (HTTPS) access   [Skip]</text>
+<text x="18" y="800" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">      (no extra detail was recorded for this check)</text>
+<text x="18" y="820" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">      check id HTTPS   -   layer Stack</text>
+<text x="18" y="860" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">    The values above are also written to the session log and to any report</text>
+<text x="18" y="880" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#767676" xml:space="preserve">    you save.</text>
+<rect x="18" y="885" width="8" height="2.5" fill="#CCCCCC" opacity="0.85"/>
+</svg>

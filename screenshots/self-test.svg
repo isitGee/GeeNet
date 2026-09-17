@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="811" height="542" viewBox="0 0 811 542" role="img" aria-label="GeeNet - Self Test">
+<title>GeeNet - Self Test</title>
+<rect x="0.5" y="0.5" width="810" height="541" rx="9" fill="#0C0C0C" stroke="#3A3A3A"/>
+<path d="M0.5 9.5 A9 9 0 0 1 9.5 0.5 H801.5 A9 9 0 0 1 810.5 9.5 V34.0 H0.5 Z" fill="#1F1F1F"/>
+<text x="765" y="22" font-family="Segoe UI, sans-serif" font-size="12" fill="#BFBFBF" text-anchor="middle">&#x2212;</text>
+<text x="781" y="22" font-family="Segoe UI, sans-serif" font-size="12" fill="#BFBFBF" text-anchor="middle">&#x25A1;</text>
+<text x="797" y="22" font-family="Segoe UI, sans-serif" font-size="12" fill="#BFBFBF" text-anchor="middle">&#x2715;</text>
+<rect x="14" y="11" width="12" height="12" rx="2.5" fill="#2D2D2D" stroke="#4A4A4A"/>
+<text x="20" y="21" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="9" fill="#8CD98C" text-anchor="middle">&gt;_</text>
+<text x="34" y="22" font-family="Segoe UI, sans-serif" font-size="12.5" fill="#BFBFBF">GeeNet - Self Test</text>
+<text x="18" y="60" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   A. Healthy connection   -&gt; Healthy/Pass</text>
+<text x="18" y="80" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   B. Network adapter disconnected   -&gt; Link/Fail</text>
+<text x="18" y="100" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   C. No usable IP address (169.254 self-assigned)   -&gt; IP/Fail</text>
+<text x="18" y="120" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   D. No default gateway configured   -&gt; Gateway/Fail</text>
+<text x="18" y="140" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   E. Router (gateway) unreachable   -&gt; LocalNet/Fail</text>
+<text x="18" y="160" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   F. Internet unreachable although the router answers   -&gt; Upstream/Fail</text>
+<text x="18" y="180" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   G. DNS does not resolve names (internet by IP works)   -&gt; DNS/Fail</text>
+<text x="18" y="200" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   H. Web (HTTPS) traffic broken, ping and DNS fine   -&gt; HTTPS/Fail</text>
+<text x="18" y="220" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   I. Only one application fails (Teams)   -&gt; Application/Fail</text>
+<text x="18" y="240" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   J. Only this computer fails (other devices are fine)   -&gt; IP/Fail</text>
+<text x="18" y="260" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   K. Whole network has no internet   -&gt; Upstream/Fail</text>
+<text x="18" y="280" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   L. Laptop on Wi-Fi with the cable unplugged   -&gt; Healthy/Pass</text>
+<text x="18" y="300" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   M. DNS answers very slowly   -&gt; DNSSlow/Warn</text>
+<text x="18" y="320" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   N. Wi-Fi adapter present but nothing connected   -&gt; Link/Fail</text>
+<text x="18" y="340" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   W. Weak Wi-Fi signal   -&gt; Latency/Warn</text>
+<text x="18" y="360" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   S. Packet loss on the way to the internet   -&gt; PacketLoss/Fail</text>
+<text x="18" y="380" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   X. Windows network services stopped   -&gt; Services/Fail</text>
+<text x="18" y="400" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   P. Wi-Fi link is fine, no internet, other devices are fine too   -&gt; Upstream/Fail</text>
+<text x="18" y="420" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   V. VPN tunnel is up and the internet stopped working   -&gt; VPN/Fail</text>
+<text x="18" y="440" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   R. Connection is slow (high latency, no packet loss)   -&gt; Latency/Warn</text>
+<text x="18" y="460" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">    [ok]   Y. Hosts file blocking a website   -&gt; HostsFile/Warn</text>
+<text x="18" y="500" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#3A96DD" xml:space="preserve">  --------------------------------------------------------------------------</text>
+<text x="18" y="520" font-family="ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#16C60C" xml:space="preserve">  SELF TEST PASSED - 225 checks in 13.6 s</text>
+<rect x="18" y="525" width="8" height="2.5" fill="#CCCCCC" opacity="0.85"/>
+</svg>
