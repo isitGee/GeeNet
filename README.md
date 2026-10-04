@@ -1,4 +1,4 @@
-# GeeNet — Windows Network Toolkit
+# GeeNet. Windows Network Toolkit
 
 **Diagnose · Troubleshoot · Repair**
 
@@ -83,7 +83,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File GeeNet.ps1
 [0] Exit
 ```
 
-### 1. Beginner — Guided Troubleshooting
+### 1. Beginner: Guided Troubleshooting
 
 You describe the problem in your own words.
 
@@ -99,7 +99,7 @@ GeeNet currently supports:
 
 The goal is to make network troubleshooting understandable even for users who don't have advanced networking knowledge.
 
-### 2. Professional — Advanced Tools
+### 2. Professional: Advanced Tools
 
 Provides direct access to classic networking tools, including:
 
@@ -122,16 +122,16 @@ Provides direct access to classic networking tools, including:
 
 ### Other Options
 
-**3 — Network Information**
+**3 Network Information**
 Displays the complete network configuration in one screen.
 
-**4 — Generate Network Report**
+**4 Generate Network Report**
 Creates a plain-text network report inside the `reports` folder.
 
-**5 — About GeeNet**
+**5 About GeeNet**
 Explains what GeeNet does and what it deliberately does not do.
 
-**6 — Administrator Rights**
+**6 Administrator Rights**
 Restarts GeeNet with Administrator privileges when required.
 
 ---
@@ -142,13 +142,13 @@ GeeNet follows the network path in a logical order:
 
 | Step  | What GeeNet Checks                                                   |
 | ----- | -------------------------------------------------------------------- |
-| **1** | Physical link and adapter — is the cable/Wi-Fi actually connected?   |
-| **2** | IP configuration and DHCP — does the computer have a usable address? |
-| **3** | Default gateway — is a router address configured?                    |
-| **4** | Router reachability — does the router answer?                        |
-| **5** | Internet by IP address — does the outside world answer?              |
-| **6** | DNS name resolution — can names be turned into addresses?            |
-| **7** | Web/HTTPS and applications — does real web traffic work?             |
+| **1** | Physical link and adapter: is the cable/Wi-Fi actually connected?   |
+| **2** | IP configuration and DHCP: does the computer have a usable address? |
+| **3** | Default gateway: is a router address configured?                    |
+| **4** | Router reachability: does the router answer?                        |
+| **5** | Internet by IP address: does the outside world answer?              |
+| **6** | DNS name resolution: can names be turned into addresses?            |
+| **7** | Web/HTTPS and applications: does real web traffic work?             |
 
 GeeNet stops when a failure makes the remaining tests meaningless and explains why it stopped.
 
@@ -200,7 +200,7 @@ Examples include:
 * Windows network reset
 * Forgetting a saved Wi-Fi profile
 
-High-risk operations are clearly labelled and require additional confirmation.
+High risk operations are clearly labelled and require additional confirmation.
 
 ### Before Every Repair
 
@@ -323,7 +323,7 @@ tests\
 
 The tests use simulated Windows networking data, so they can run on any machine with PowerShell.
 
-### Built-in Self Test
+### Built in Self Test
 
 The normal way to check GeeNet is:
 
@@ -331,7 +331,7 @@ The normal way to check GeeNet is:
 GeeNet.bat -SelfTest
 ```
 
-The self-test performs:
+The self test performs:
 
 **225 checks**
 
@@ -374,7 +374,7 @@ Use:
 GeeNet.bat -Ascii
 ```
 
-### Self-test fails
+### Self test fails
 
 Keep the generated report:
 
